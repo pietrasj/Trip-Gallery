@@ -12,6 +12,13 @@
 		AFFF21961EAEF23700F9C755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFF21941EAEF23700F9C755 /* Main.storyboard */; };
 		AFFF21981EAEF23700F9C755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFF21971EAEF23700F9C755 /* Assets.xcassets */; };
 		AFFF219B1EAEF23700F9C755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFF21991EAEF23700F9C755 /* LaunchScreen.storyboard */; };
+		AFFF21A91EAEF91800F9C755 /* TblViewControllerTrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFF21A81EAEF91800F9C755 /* TblViewControllerTrips.swift */; };
+		AFFF21AB1EAEF93300F9C755 /* TbleViewControllerTripInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFF21AA1EAEF93300F9C755 /* TbleViewControllerTripInfo.swift */; };
+		AFFF21B11EAF0F7100F9C755 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFF21B01EAF0F7100F9C755 /* Trip.swift */; };
+		AFFF21B41EAF430F00F9C755 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFF21B31EAF430F00F9C755 /* MapKit.framework */; };
+		AFFF21B61EAF44A100F9C755 /* TripsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFF21B51EAF44A100F9C755 /* TripsMapViewController.swift */; };
+		AFFF21BA1EAF47D000F9C755 /* TripAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFF21B91EAF47D000F9C755 /* TripAnnotation.swift */; };
+		AFFF21BC1EAF513A00F9C755 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFF21BB1EAF513A00F9C755 /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		AFFF21971EAEF23700F9C755 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFFF219A1EAEF23700F9C755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFFF219C1EAEF23700F9C755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFFF21A81EAEF91800F9C755 /* TblViewControllerTrips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TblViewControllerTrips.swift; sourceTree = "<group>"; };
+		AFFF21AA1EAEF93300F9C755 /* TbleViewControllerTripInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TbleViewControllerTripInfo.swift; sourceTree = "<group>"; };
+		AFFF21B01EAF0F7100F9C755 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		AFFF21B31EAF430F00F9C755 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AFFF21B51EAF44A100F9C755 /* TripsMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsMapViewController.swift; sourceTree = "<group>"; };
+		AFFF21B91EAF47D000F9C755 /* TripAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripAnnotation.swift; sourceTree = "<group>"; };
+		AFFF21BB1EAF513A00F9C755 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFFF21B41EAF430F00F9C755 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,7 @@
 			children = (
 				AFFF218F1EAEF23700F9C755 /* Trip Gallery */,
 				AFFF218E1EAEF23700F9C755 /* Products */,
+				AFFF21B21EAF430F00F9C755 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +76,22 @@
 				AFFF21971EAEF23700F9C755 /* Assets.xcassets */,
 				AFFF21991EAEF23700F9C755 /* LaunchScreen.storyboard */,
 				AFFF219C1EAEF23700F9C755 /* Info.plist */,
+				AFFF21A81EAEF91800F9C755 /* TblViewControllerTrips.swift */,
+				AFFF21AA1EAEF93300F9C755 /* TbleViewControllerTripInfo.swift */,
+				AFFF21B01EAF0F7100F9C755 /* Trip.swift */,
+				AFFF21B51EAF44A100F9C755 /* TripsMapViewController.swift */,
+				AFFF21B91EAF47D000F9C755 /* TripAnnotation.swift */,
+				AFFF21BB1EAF513A00F9C755 /* LocationService.swift */,
 			);
 			path = "Trip Gallery";
+			sourceTree = "<group>";
+		};
+		AFFF21B21EAF430F00F9C755 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFFF21B31EAF430F00F9C755 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +128,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 24SM6522LU;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -137,6 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFFF21BA1EAF47D000F9C755 /* TripAnnotation.swift in Sources */,
+				AFFF21B61EAF44A100F9C755 /* TripsMapViewController.swift in Sources */,
+				AFFF21BC1EAF513A00F9C755 /* LocationService.swift in Sources */,
+				AFFF21B11EAF0F7100F9C755 /* Trip.swift in Sources */,
+				AFFF21AB1EAEF93300F9C755 /* TbleViewControllerTripInfo.swift in Sources */,
+				AFFF21A91EAEF91800F9C755 /* TblViewControllerTrips.swift in Sources */,
 				AFFF21931EAEF23700F9C755 /* ViewController.swift in Sources */,
 				AFFF21911EAEF23700F9C755 /* AppDelegate.swift in Sources */,
 			);
