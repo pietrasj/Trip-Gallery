@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 
 class TripsMapViewController: UIViewController, LocationObserver, MKMapViewDelegate {
-
+    
     @IBOutlet weak var tripsMap: MKMapView!
     
     
@@ -35,14 +35,14 @@ class TripsMapViewController: UIViewController, LocationObserver, MKMapViewDeleg
                 (placeMark, error) in
                 let tripLocation = placeMark![0].location?.coordinate
                 self.tripsMap.addAnnotation(TripAnnotation(tripId: i, trip: trip, coordinate: tripLocation!))
-                }
+            }
             )
-        
+            
         }
         
         LocationService.shared.registerLocationObserver(locationObserver: self)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -75,7 +75,7 @@ class TripsMapViewController: UIViewController, LocationObserver, MKMapViewDeleg
         }
         return annotationView
     }
-
+    
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         // I get the selected annotationView, get annotation included, and get TripId
         // TripId is the index of the trip in the trips array
@@ -95,5 +95,5 @@ class TripsMapViewController: UIViewController, LocationObserver, MKMapViewDeleg
     func locationDidChange(newLocations: [CLLocation]) {
         self.tripsMap.setCenter(newLocations[0].coordinate, animated: true)
     }
-
+    
 }

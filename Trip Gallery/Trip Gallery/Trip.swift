@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 class Trip {
     var tripDate : Date
@@ -27,11 +28,14 @@ class Trip {
 class Utilities {
     static var dateFormatter = DateFormatter()
     static var trips : [Trip] = []
-    static func loadTrips() {
+    class func loadTrips() {
+        
+        
         dateFormatter.dateFormat = "dd/mm/yy"
         trips = [
             Trip(date: dateFormatter.date(from: "24/04/17")!, duration: 2, destination: "Melbourne", img: UIImage(named: "Melbourne")!),
             Trip(date: dateFormatter.date(from: "24/05/17")!, duration: 2, destination: "Sydney", img: UIImage(named: "Sydney")!)
         ]
+         
     }
 }

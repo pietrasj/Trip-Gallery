@@ -341,6 +341,7 @@
 				AFFF21A11EAEF23700F9C755 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
